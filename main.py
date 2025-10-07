@@ -19,6 +19,9 @@ SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 SENDER = os.environ.get("SENDER")
 APP_PASSWORD = os.environ.get("APP_PASSWORD")
 
+print("SUPABASE_URL:", os.environ.get("SUPABASE_URL"))
+print("SUPABASE_KEY:", os.environ.get("SUPABASE_KEY"))
+
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 TABLE_NAME = "MarketData"  # your table name
